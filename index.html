@@ -7,20 +7,52 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
-body{background:#f4f6f9;color:#222;line-height:1.6}
-
-header{
-  background:linear-gradient(135deg,#0a2540,#1e3a5f);
-  color:white;
-  padding:80px 20px;
-  text-align:center;
+body{
+  background:#0f2a1f;
+  color:#f5f5f5;
+  line-height:1.6;
 }
-header h1{font-size:42px;margin-bottom:10px}
-header p{font-size:18px;opacity:.9}
 
-section{padding:60px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;margin-bottom:40px;font-size:32px}
+/* ===== HEADER ===== */
+header{
+  background:radial-gradient(circle at top,#1c4d38,#0f2a1f);
+  color:white;
+  padding:70px 20px;
+  text-align:center;
+  border-bottom:2px solid #d4af37;
+}
 
+.logo{
+  max-width:220px;
+  margin-bottom:20px;
+}
+
+header h1{
+  font-size:42px;
+  color:#d4af37;
+  letter-spacing:1px;
+}
+
+header p{
+  font-size:18px;
+  opacity:.9;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:32px;
+  color:#d4af37;
+}
+
+/* ===== SERVICES ===== */
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -28,73 +60,68 @@ h2{text-align:center;margin-bottom:40px;font-size:32px}
 }
 
 .card{
-  background:white;
+  background:#163a2b;
   padding:25px;
-  border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-  transition:.25s;
+  border-radius:16px;
+  border:1px solid rgba(212,175,55,.35);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  transition:.3s;
 }
-.card:hover{transform:translateY(-5px)}
 
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#d4af37;
+}
+
+.card h3{
+  color:#d4af37;
+  margin-bottom:10px;
+}
+
+/* ===== OPINIONS ===== */
 .opinions{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:25px;
 }
+
 .opinion{
-  background:white;
+  background:#163a2b;
   padding:25px;
-  border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  border-radius:16px;
+  border:1px solid rgba(212,175,55,.35);
 }
 
+/* ===== GALLERY ===== */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:15px;
 }
+
 .gallery img{
   width:100%;
   border-radius:12px;
   height:200px;
   object-fit:cover;
+  border:2px solid rgba(212,175,55,.35);
 }
 
-form{
-  max-width:500px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-}
-input,textarea{
-  padding:12px;
-  border-radius:8px;
-  border:1px solid #ccc;
-  font-size:16px;
-}
-button{
-  background:#0a2540;
-  color:white;
-  border:none;
-  padding:14px;
-  border-radius:8px;
-  font-size:16px;
-  cursor:pointer;
-}
-button:hover{background:#163a63}
-
+/* ===== CONTACT ===== */
 .contact-box{
   text-align:center;
-  margin-top:25px;
+  font-size:18px;
+  line-height:1.8;
 }
 
+/* ===== FOOTER ===== */
 footer{
-  background:#0a2540;
-  color:white;
+  background:#0b1f17;
+  color:#d4af37;
   text-align:center;
   padding:30px;
   margin-top:40px;
+  border-top:1px solid rgba(212,175,55,.3);
 }
 </style>
 </head>
@@ -102,6 +129,7 @@ footer{
 <body>
 
 <header>
+  <img src="logo.png" alt="Gabinet MOC NATURY" class="logo">
   <h1>Gabinet MOC NATURY</h1>
   <p>Usługi medycyny alternatywnej</p>
 </header>
@@ -127,8 +155,7 @@ footer{
 
     <div class="card">
       <h3>BAŃKI CHIŃSKIE</h3>
-      <p>Stawianie baniek poprawia krążenie, rozluźnia mięśnie i wspiera odporność organizmu
-      poprzez naturalną stymulację układu immunologicznego.</p>
+      <p>Stawianie baniek poprawia krążenie, rozluźnia mięśnie i wspiera odporność organizmu.</p>
     </div>
 
     <div class="card">
@@ -138,8 +165,7 @@ footer{
 
     <div class="card">
       <h3>BRT</h3>
-      <p>Terapia częstotliwościowa wspierająca organizm w regeneracji, detoksykacji
-      oraz wzmacnianiu odporności.</p>
+      <p>Terapia częstotliwościowa wspierająca organizm w regeneracji i wzmacnianiu odporności.</p>
     </div>
 
   </div>
@@ -148,36 +174,17 @@ footer{
 <section>
   <h2>Opinie klientów</h2>
   <div class="opinions">
-    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Pełen profesjonalizm i miła atmosfera.</div>
-    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Ogromna ulga po zabiegach — polecam!</div>
+    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Pełen profesjonalizm i cudowna atmosfera.</div>
+    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Ogromna ulga po zabiegach — polecam.</div>
     <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Indywidualne podejście do klienta.</div>
   </div>
 </section>
 
 <section>
-  <h2>Galeria</h2>
-  <div class="gallery">
-    <img src="https://picsum.photos/400?1">
-    <img src="https://picsum.photos/400?2">
-    <img src="https://picsum.photos/400?3">
-    <img src="https://picsum.photos/400?4">
-  </div>
-</section>
-
-<section>
   <h2>Kontakt</h2>
-
-  <!-- FORMULARZ (działa po podpięciu Formspree) -->
-  <form action="https://formspree.io/f/yourID" method="POST">
-    <input type="text" name="name" placeholder="Twoje imię" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
-    <button type="submit">Wyślij wiadomość</button>
-  </form>
-
   <div class="contact-box">
-    <p>Email: cywinska.katarzyna@wp.pl</p>
-    <p>Telefon: 662 748 489</p>
+    <p>📧 cywinska.katarzyna@wp.pl</p>
+    <p>📞 662 748 489</p>
   </div>
 </section>
 
