@@ -7,70 +7,78 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+
 body{
-  background:#0f2a1f;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(212,175,55,.12), transparent 45%),
+    #0e2b1f;
   color:#f5f5f5;
   line-height:1.6;
 }
 
 /* ===== HEADER ===== */
 header{
-  background:radial-gradient(circle at top,#1c4d38,#0f2a1f);
-  color:white;
-  padding:70px 20px;
   text-align:center;
-  border-bottom:2px solid #d4af37;
+  padding:80px 20px 60px;
+  border-bottom:1px solid rgba(212,175,55,.35);
 }
 
 .logo{
-  max-width:220px;
-  margin-bottom:20px;
+  width:240px;
+  max-width:80%;
+  margin-bottom:25px;
+  filter:drop-shadow(0 0 12px rgba(212,175,55,.35));
 }
 
 header h1{
   font-size:42px;
   color:#d4af37;
-  letter-spacing:1px;
+  letter-spacing:2px;
+  text-shadow:0 0 12px rgba(212,175,55,.25);
 }
 
 header p{
-  font-size:18px;
+  margin-top:8px;
   opacity:.9;
 }
 
 /* ===== SECTIONS ===== */
 section{
-  padding:60px 20px;
+  padding:70px 20px;
   max-width:1100px;
   margin:auto;
 }
 
 h2{
   text-align:center;
-  margin-bottom:40px;
+  margin-bottom:45px;
   font-size:32px;
   color:#d4af37;
+  text-shadow:0 0 10px rgba(212,175,55,.25);
 }
 
-/* ===== SERVICES ===== */
+/* ===== CARDS ===== */
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  gap:28px;
 }
 
 .card{
-  background:#163a2b;
-  padding:25px;
-  border-radius:16px;
+  background:rgba(22,58,43,.85);
+  backdrop-filter:blur(6px);
+  padding:26px;
+  border-radius:18px;
   border:1px solid rgba(212,175,55,.35);
-  box-shadow:0 10px 30px rgba(0,0,0,.4);
-  transition:.3s;
+  box-shadow:0 15px 35px rgba(0,0,0,.45);
+  transition:.35s;
 }
 
 .card:hover{
-  transform:translateY(-6px);
+  transform:translateY(-8px) scale(1.02);
   border-color:#d4af37;
+  box-shadow:0 20px 45px rgba(0,0,0,.6);
 }
 
 .card h3{
@@ -81,13 +89,13 @@ h2{
 /* ===== OPINIONS ===== */
 .opinions{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:25px;
 }
 
 .opinion{
-  background:#163a2b;
-  padding:25px;
+  background:rgba(22,58,43,.85);
+  padding:24px;
   border-radius:16px;
   border:1px solid rgba(212,175,55,.35);
 }
@@ -96,32 +104,39 @@ h2{
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px;
+  gap:18px;
 }
 
 .gallery img{
   width:100%;
-  border-radius:12px;
-  height:200px;
+  height:220px;
   object-fit:cover;
+  border-radius:14px;
   border:2px solid rgba(212,175,55,.35);
+  transition:.35s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+  border-color:#d4af37;
+  box-shadow:0 0 25px rgba(212,175,55,.35);
 }
 
 /* ===== CONTACT ===== */
 .contact-box{
   text-align:center;
   font-size:18px;
-  line-height:1.8;
+  line-height:1.9;
 }
 
 /* ===== FOOTER ===== */
 footer{
-  background:#0b1f17;
+  background:#081a13;
   color:#d4af37;
   text-align:center;
   padding:30px;
-  margin-top:40px;
-  border-top:1px solid rgba(212,175,55,.3);
+  margin-top:50px;
+  border-top:1px solid rgba(212,175,55,.35);
 }
 </style>
 </head>
@@ -136,7 +151,7 @@ footer{
 
 <section>
   <h2>O nas</h2>
-  <p style="text-align:center;max-width:750px;margin:auto">
+  <p style="text-align:center;max-width:760px;margin:auto">
     W Gabinecie MOC NATURY wspieramy Twoje zdrowie i dobre samopoczucie w naturalny sposób.
     Stawiamy na zioła, tradycyjne metody i holistyczne podejście, aby przywracać równowagę
     ciała i ducha w codziennym życiu. Zapraszamy dorosłych i dzieci!
@@ -149,34 +164,36 @@ footer{
 
     <div class="card">
       <h3>BIOREZONANS</h3>
-      <p>Biorezonans magnetyczny to metoda wykorzystywana w medycynie niekonwencjonalnej
-      do celów diagnostycznych i wspomagających terapię poprzez pracę na częstotliwościach organizmu.</p>
+      <p>Nowoczesna metoda wspierająca organizm poprzez pracę na częstotliwościach.</p>
     </div>
 
     <div class="card">
       <h3>BAŃKI CHIŃSKIE</h3>
-      <p>Stawianie baniek poprawia krążenie, rozluźnia mięśnie i wspiera odporność organizmu.</p>
+      <p>Naturalne wsparcie odporności i poprawa krążenia.</p>
     </div>
 
     <div class="card">
       <h3>KONCHOWANIE USZU</h3>
-      <p>Zabieg wspierający oczyszczanie uszu, relaksację oraz łagodzenie napięć i bólów głowy.</p>
+      <p>Zabieg relaksacyjny wspierający oczyszczanie i wyciszenie.</p>
     </div>
 
     <div class="card">
       <h3>BRT</h3>
-      <p>Terapia częstotliwościowa wspierająca organizm w regeneracji i wzmacnianiu odporności.</p>
+      <p>Terapia częstotliwościowa wzmacniająca organizm.</p>
     </div>
 
   </div>
 </section>
 
 <section>
-  <h2>Opinie klientów</h2>
-  <div class="opinions">
-    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Pełen profesjonalizm i cudowna atmosfera.</div>
-    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Ogromna ulga po zabiegach — polecam.</div>
-    <div class="opinion">⭐️⭐️⭐️⭐️⭐️<br>Indywidualne podejście do klienta.</div>
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/600?1">
+    <img src="https://picsum.photos/600?2">
+    <img src="https://picsum.photos/600?3">
+    <img src="https://picsum.photos/600?4">
+    <img src="https://picsum.photos/600?5">
+    <img src="https://picsum.photos/600?6">
   </div>
 </section>
 
