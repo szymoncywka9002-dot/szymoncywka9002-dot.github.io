@@ -6,6 +6,7 @@
 <title>Gabinet MOC NATURY</title>
 
 <style>
+html{scroll-behavior:smooth}
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
 
 body{
@@ -17,7 +18,24 @@ body{
   line-height:1.6;
 }
 
-/* ===== HEADER ===== */
+/* ✨ GOLD PARTICLES */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    radial-gradient(circle, rgba(212,175,55,.25) 1px, transparent 1px);
+  background-size:120px 120px;
+  animation:goldMove 60s linear infinite;
+  opacity:.35;
+}
+@keyframes goldMove{
+  from{transform:translateY(0)}
+  to{transform:translateY(-120px)}
+}
+
+/* HEADER */
 header{
   text-align:center;
   padding:80px 20px 60px;
@@ -28,22 +46,18 @@ header{
   width:240px;
   max-width:80%;
   margin-bottom:25px;
-  filter:drop-shadow(0 0 12px rgba(212,175,55,.35));
+  filter:drop-shadow(0 0 14px rgba(212,175,55,.45));
 }
 
 header h1{
-  font-size:42px;
+  font-size:44px;
   color:#d4af37;
   letter-spacing:2px;
-  text-shadow:0 0 12px rgba(212,175,55,.25);
 }
 
-header p{
-  margin-top:8px;
-  opacity:.9;
-}
+header p{opacity:.9}
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 section{
   padding:70px 20px;
   max-width:1100px;
@@ -53,54 +67,50 @@ section{
 h2{
   text-align:center;
   margin-bottom:45px;
-  font-size:32px;
+  font-size:34px;
   color:#d4af37;
-  text-shadow:0 0 10px rgba(212,175,55,.25);
 }
 
-/* ===== CARDS ===== */
-.services{
+/* CARDS */
+.services,.opinions{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:28px;
 }
 
-.card{
-  background:rgba(22,58,43,.85);
-  backdrop-filter:blur(6px);
+.card,.opinion{
+  background:rgba(22,58,43,.88);
   padding:26px;
   border-radius:18px;
   border:1px solid rgba(212,175,55,.35);
-  box-shadow:0 15px 35px rgba(0,0,0,.45);
+  box-shadow:0 18px 40px rgba(0,0,0,.55);
   transition:.35s;
 }
 
 .card:hover{
   transform:translateY(-8px) scale(1.02);
   border-color:#d4af37;
-  box-shadow:0 20px 45px rgba(0,0,0,.6);
 }
 
-.card h3{
-  color:#d4af37;
-  margin-bottom:10px;
+.card h3{color:#d4af37}
+
+/* 💰 PRICING */
+.pricing{
+  max-width:700px;
+  margin:auto;
 }
 
-/* ===== OPINIONS ===== */
-.opinions{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  padding:14px 18px;
+  border-bottom:1px solid rgba(212,175,55,.25);
+  font-size:18px;
 }
 
-.opinion{
-  background:rgba(22,58,43,.85);
-  padding:24px;
-  border-radius:16px;
-  border:1px solid rgba(212,175,55,.35);
-}
+.price-row strong{color:#d4af37}
 
-/* ===== GALLERY ===== */
+/* GALLERY */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -117,31 +127,55 @@ h2{
 }
 
 .gallery img:hover{
-  transform:scale(1.05);
-  border-color:#d4af37;
-  box-shadow:0 0 25px rgba(212,175,55,.35);
+  transform:scale(1.06);
+  box-shadow:0 0 30px rgba(212,175,55,.45);
 }
 
-/* ===== CONTACT ===== */
+/* CONTACT */
 .contact-box{
   text-align:center;
   font-size:18px;
   line-height:1.9;
 }
 
-/* ===== FOOTER ===== */
+/* 📱 CALL BUTTON */
+.call-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#d4af37;
+  color:#0e2b1f;
+  padding:16px 22px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+  z-index:999;
+}
+
+/* MAP */
+.map{
+  margin-top:40px;
+  border-radius:16px;
+  overflow:hidden;
+  border:2px solid rgba(212,175,55,.35);
+}
+
+/* FOOTER */
 footer{
   background:#081a13;
   color:#d4af37;
   text-align:center;
   padding:30px;
-  margin-top:50px;
+  margin-top:60px;
   border-top:1px solid rgba(212,175,55,.35);
 }
 </style>
 </head>
 
 <body>
+
+<a href="tel:662748489" class="call-btn">📞 Zadzwoń</a>
 
 <header>
   <img src="logo.png" alt="Gabinet MOC NATURY" class="logo">
@@ -153,35 +187,28 @@ footer{
   <h2>O nas</h2>
   <p style="text-align:center;max-width:760px;margin:auto">
     W Gabinecie MOC NATURY wspieramy Twoje zdrowie i dobre samopoczucie w naturalny sposób.
-    Stawiamy na zioła, tradycyjne metody i holistyczne podejście, aby przywracać równowagę
-    ciała i ducha w codziennym życiu. Zapraszamy dorosłych i dzieci!
+    Stawiamy na holistyczne podejście i sprawdzone metody.
   </p>
 </section>
 
 <section>
   <h2>Usługi</h2>
   <div class="services">
+    <div class="card"><h3>BIOREZONANS</h3><p>Diagnostyka i wsparcie organizmu.</p></div>
+    <div class="card"><h3>BAŃKI CHIŃSKIE</h3><p>Poprawa krążenia i odporności.</p></div>
+    <div class="card"><h3>KONCHOWANIE USZU</h3><p>Relaks i oczyszczanie.</p></div>
+    <div class="card"><h3>BRT</h3><p>Terapia częstotliwościowa.</p></div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>BIOREZONANS</h3>
-      <p>Nowoczesna metoda wspierająca organizm poprzez pracę na częstotliwościach.</p>
-    </div>
-
-    <div class="card">
-      <h3>BAŃKI CHIŃSKIE</h3>
-      <p>Naturalne wsparcie odporności i poprawa krążenia.</p>
-    </div>
-
-    <div class="card">
-      <h3>KONCHOWANIE USZU</h3>
-      <p>Zabieg relaksacyjny wspierający oczyszczanie i wyciszenie.</p>
-    </div>
-
-    <div class="card">
-      <h3>BRT</h3>
-      <p>Terapia częstotliwościowa wzmacniająca organizm.</p>
-    </div>
-
+<section>
+  <h2>Cennik</h2>
+  <div class="pricing">
+    <div class="price-row"><span>Biorezonans</span><strong>-Usługa biorezonans (dla osób od 10ego roku życia) test kompleksowy całego organizmu 200 zł (w cenie raport całego organizmu plus zalecenia z zakresu ziołolecznictwa , w formie druku oraz wysłane na email)</strong></div>
+    <div class="price-row"><span>Bańki chińskie</span><strong>- stawianie baniek ogniowych (tylko dla osób pełnoletnich) koszt 100 zł (czas trwania sesji to 30-45 min)
+ - stawianie baniek bezogniowych (próżniowych) dla dzieci w wieku 10-18 lat koszt 50 zł (sesja 15-25 min)</strong></div>
+    <div class="price-row"><span>Konchowanie uszu</span><strong>- konchowanie uszu koszt 60 zł (tylko osoby pełnoletnie)</strong></div>
+    <div class="price-row"><span>BRT</span><strong>oszt jednego seansu, który trwa 20 minut to 50 zł (zalecany jest cały cykl 7 dni, by terapia była skuteczna)</strong></div>
   </div>
 </section>
 
@@ -202,6 +229,11 @@ footer{
   <div class="contact-box">
     <p>📧 cywinska.katarzyna@wp.pl</p>
     <p>📞 662 748 489</p>
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=Polska&output=embed"
+      width="100%" height="320" style="border:0;" loading="lazy"></iframe>
   </div>
 </section>
 
