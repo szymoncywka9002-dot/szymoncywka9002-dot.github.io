@@ -13,7 +13,7 @@ body{
    background:
     linear-gradient(rgba(5,20,15,.65), rgba(5,20,15,.75)),
     radial-gradient(circle at 20% 30%, rgba(212,175,55,.48), transparent 10%),
-    radial-gradient(circle at 80% 70%, rgba(212,175,55,.82), transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(212,175,55,.12), transparent 50%),
     url("tlo.png") center/cover fixed no-repeat;
   color:#f5f5f5;
 }
@@ -44,7 +44,6 @@ body{
   font-size:20px;
 }
 
-/* desktop links */
 .nav-links{
   display:flex;
   gap:22px;
@@ -77,7 +76,6 @@ body{
 
 /* mobile menu */
 @media (max-width:768px){
-
   .hamburger{ display:flex; }
 
   .nav-links{
@@ -140,13 +138,52 @@ header h1{
   border-color:#d4af37;
 }
 
-/* images */
 .service-img{
   width:100%;
   height:160px;
   object-fit:cover;
   border-radius:12px;
   margin-bottom:12px;
+}
+
+/* ===== OPINIE ===== */
+.reviews{
+  max-width:1100px;
+  margin:80px auto;
+  padding:0 20px;
+  text-align:center;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  margin-top:30px;
+}
+
+.review{
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(212,175,55,.35);
+  border-radius:18px;
+  padding:24px;
+  transition:.3s;
+}
+
+.review:hover{
+  transform:translateY(-6px);
+  border-color:#d4af37;
+}
+
+.review-stars{
+  color:#d4af37;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.review-name{
+  margin-top:12px;
+  font-weight:bold;
+  color:#d4af37;
 }
 
 /* CONTACT */
@@ -183,15 +220,12 @@ header h1{
 
 <body>
 
-<!-- ===== MENU ===== -->
 <nav class="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">MOC NATURY</a>
 
     <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
 
     <div class="nav-links" id="navLinks">
@@ -212,9 +246,6 @@ header h1{
   <p>Usługi medycyny alternatywnej</p>
 </header>
 
-
-   
-
 <section style="max-width:900px;margin:40px auto;text-align:center;padding:0 20px">
   <p>
     W Gabinecie MOC NATURY wspieramy Twoje zdrowie i dobre samopoczucie w naturalny sposób.
@@ -222,38 +253,61 @@ header h1{
   </p>
 </section>
 
-
-
-   
 <section id="uslugi" class="services">
   <a href="biorezonans.html" class="card">
     <img src="bio.jpg" class="service-img">
     <h3>BIOREZONANS</h3>
-    <p>Kliknij aby zobaczyć opis</p>
+    <p>Kliknij aby zobaczyć</p>
   </a>
 
   <a href="banki.html" class="card">
     <img src="banki.jpg" class="service-img">
     <h3>BAŃKI CHIŃSKIE</h3>
-    <p>Kliknij aby zobaczyć opis</p>
+    <p>Kliknij aby zobaczyć</p>
   </a>
 
   <a href="konchy.html" class="card">
     <img src="konchy.jpg" class="service-img">
     <h3>KONCHOWANIE USZU</h3>
-    <p>Kliknij aby zobaczyć opis</p>
+    <p>Kliknij aby zobaczyć</p>
   </a>
 
   <a href="brt.html" class="card">
     <img src="brt.jpg" class="service-img">
     <h3>BRT</h3>
-    <p>Kliknij aby zobaczyć opis</p>
+    <p>Kliknij aby zobaczyć</p>
   </a>
 </section>
+
+<!-- ⭐ OPINIE -->
+<section class="reviews">
+  <h2 style="color:#d4af37">Opinie klientów</h2>
+
+  <div class="review-grid">
+    <div class="review">
+      <div class="review-stars">★★★★★</div>
+      <p>Świetna atmosfera i pełen profesjonalizm. Bardzo polecam!</p>
+      <div class="review-name">— Anna K.</div>
+    </div>
+
+    <div class="review">
+      <div class="review-stars">★★★★★</div>
+      <p>Już po pierwszej wizycie poczułam ogromną poprawę.</p>
+      <div class="review-name">— Marek P.</div>
+    </div>
+
+    <div class="review">
+      <div class="review-stars">★★★★★</div>
+      <p>Indywidualne podejście i duża wiedza. Na pewno wrócę.</p>
+      <div class="review-name">— Katarzyna W.</div>
+    </div>
+  </div>
+
 
 
 
    
+</section>
 
 <section id="kontakt" class="contact">
   <h2 style="color:#d4af37">Kontakt</h2>
