@@ -3,306 +3,270 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gabinet MOC NATURY | Grudziądz</title>
+
+<title>Biorezonans Grudziądz | Bańki chińskie | Gabinet MOC NATURY</title>
+
+<meta name="description" content="Biorezonans w Grudziądzu, bańki chińskie, konchowanie uszu i terapia BRT. Gabinet MOC NATURY – naturalne metody wspierania zdrowia i odporności.">
+<meta name="keywords" content="biorezonans Grudziądz, bańki chińskie Grudziądz, bańki Grudziądz, konchowanie uszu Grudziądz, BRT terapia Grudziądz">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gabinetmocnatury.github.io/">
+
+<meta property="og:title" content="Gabinet MOC NATURY – Biorezonans i bańki chińskie Grudziądz">
+<meta property="og:description" content="Naturalne metody wspierania zdrowia – biorezonans, bańki chińskie, konchowanie uszu. Gabinet MOC NATURY w Grudziądzu.">
+<meta property="og:image" content="https://gabinetmocnatury.github.io/logo.png">
+<meta property="og:url" content="https://gabinetmocnatury.github.io">
+<meta property="og:type" content="website">
 
 <style>
 html{scroll-behavior:smooth}
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
 
 body{
-  background:
-    linear-gradient(rgba(5,20,15,.55), rgba(5,20,15,.65)),
-    radial-gradient(circle at 20% 30%, rgba(212,175,55,.55), transparent 12%),
-    radial-gradient(circle at 80% 70%, rgba(212,175,55,.25), transparent 55%),
-    url("tlo.png") center/cover fixed no-repeat;
-  color:#f5f5f5;
+background:
+linear-gradient(rgba(5,20,15,.55), rgba(5,20,15,.65)),
+radial-gradient(circle at 20% 30%, rgba(212,175,55,.55), transparent 12%),
+radial-gradient(circle at 80% 70%, rgba(212,175,55,.25), transparent 55%),
+url("tlo.png") center/cover fixed no-repeat;
+color:#f5f5f5;
 }
 
-/* ===== GLOBAL SPACING ===== */
 section{ margin-top:90px; }
 
-/* ===== MENU ===== */
 .navbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(5,20,15,.95);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid rgba(212,175,55,.45);
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(5,20,15,.95);
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(212,175,55,.45);
 }
 
 .nav-inner{
-  max-width:1200px;
-  margin:auto;
-  padding:14px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+max-width:1200px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .nav-logo{
-  color:#d4af37;
-  font-weight:bold;
-  text-decoration:none;
-  font-size:22px;
-  letter-spacing:.5px;
+color:#d4af37;
+font-weight:bold;
+text-decoration:none;
+font-size:22px;
+letter-spacing:.5px;
 }
 
 .nav-links{
-  display:flex;
-  gap:24px;
-  flex-wrap:wrap;
+display:flex;
+gap:24px;
+flex-wrap:wrap;
 }
 
 .nav-links a{
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:.25s;
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.25s;
 }
 
 .nav-links a:hover{ color:#d4af37; }
 
-/* ===== JĘZYK W MENU ===== */
 .lang-menu{
-  display:flex;
-  gap:8px;
-  align-items:center;
-  font-size:14px;
-  color:#d4af37;
-  margin-left:10px;
+display:flex;
+gap:8px;
+align-items:center;
+font-size:14px;
+color:#d4af37;
+margin-left:10px;
 }
 
 .lang-menu a{
-  color:white;
-  text-decoration:none;
-  padding:2px 6px;
-  border-radius:4px;
-  border:1px solid rgba(212,175,55,.4);
-  transition:.2s;
+color:white;
+text-decoration:none;
+padding:2px 6px;
+border-radius:4px;
+border:1px solid rgba(212,175,55,.4);
+transition:.2s;
 }
 
 .lang-menu a:hover{
-  background:#d4af37;
-  color:#0e2b1f;
+background:#d4af37;
+color:#0e2b1f;
 }
 
-/* ===== HAMBURGER ===== */
 .hamburger{
-  display:none;
-  flex-direction:column;
-  gap:5px;
-  cursor:pointer;
+display:none;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
 }
 
 .hamburger span{
-  width:26px;
-  height:3px;
-  background:#d4af37;
-  display:block;
+width:26px;
+height:3px;
+background:#d4af37;
+display:block;
 }
 
 @media (max-width:768px){
-  .hamburger{ display:flex; }
+.hamburger{ display:flex; }
 
-  .nav-links{
-    position:absolute;
-    right:0;
-    top:60px;
-    background:rgba(5,20,15,.98);
-    width:220px;
-    flex-direction:column;
-    padding:18px;
-    gap:14px;
-    border-left:1px solid rgba(212,175,55,.35);
-    border-bottom:1px solid rgba(212,175,55,.35);
-    display:none;
-  }
-
-  .nav-links.active{ display:flex; }
+.nav-links{
+position:absolute;
+right:0;
+top:60px;
+background:rgba(5,20,15,.98);
+width:220px;
+flex-direction:column;
+padding:18px;
+gap:14px;
+border-left:1px solid rgba(212,175,55,.35);
+border-bottom:1px solid rgba(212,175,55,.35);
+display:none;
 }
 
-/* HEADER */
+.nav-links.active{ display:flex; }
+}
+
 header{
-  text-align:center;
-  padding:100px 20px 80px;
+text-align:center;
+padding:100px 20px 80px;
 }
 
 .logo{
-  width:240px;
-  max-width:80%;
-  margin-bottom:25px;
-  filter:drop-shadow(0 0 12px rgba(212,175,55,.45));
+width:240px;
+max-width:80%;
+margin-bottom:25px;
+filter:drop-shadow(0 0 12px rgba(212,175,55,.45));
 }
 
 header h1{
-  font-size:46px;
-  color:#d4af37;
+font-size:46px;
+color:#d4af37;
 }
 
-/* SERVICES */
 .services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:28px;
-  max-width:1100px;
-  margin:60px auto;
-  padding:0 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:28px;
+max-width:1100px;
+margin:60px auto;
+padding:0 20px;
 }
 
 .card{
-  background:rgba(0,0,0,.55);
-  padding:26px;
-  border-radius:18px;
-  border:1px solid rgba(212,175,55,.45);
-  text-align:center;
-  text-decoration:none;
-  color:white;
-  transition:.35s;
+background:rgba(0,0,0,.55);
+padding:26px;
+border-radius:18px;
+border:1px solid rgba(212,175,55,.45);
+text-align:center;
+text-decoration:none;
+color:white;
+transition:.35s;
 }
 
 .card:hover{
-  transform:translateY(-8px);
-  border-color:#d4af37;
-  box-shadow:0 0 25px rgba(212,175,55,.25);
+transform:translateY(-8px);
+border-color:#d4af37;
+box-shadow:0 0 25px rgba(212,175,55,.25);
 }
 
 .service-img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  border-radius:12px;
-  margin-bottom:12px;
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:12px;
 }
 
-/* ===== OPINIE — SLIDER ===== */
 .reviews{
-  max-width:1100px;
-  margin:90px auto;
-  padding:0 20px;
-  text-align:center;
+max-width:1100px;
+margin:90px auto;
+padding:0 20px;
+text-align:center;
 }
 
 .review-slider{
-  display:flex;
-  gap:24px;
-  margin-top:30px;
-  overflow-x:auto;
-  scroll-snap-type:x mandatory;
-  padding-bottom:14px;
-}
-
-.review-slider::-webkit-scrollbar{
-  height:8px;
-}
-.review-slider::-webkit-scrollbar-thumb{
-  background:#d4af37;
-  border-radius:10px;
+display:flex;
+gap:24px;
+margin-top:30px;
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+padding-bottom:14px;
 }
 
 .review{
-  min-width:280px;
-  max-width:320px;
-  background:rgba(0,0,0,.55);
-  border:1px solid rgba(212,175,55,.45);
-  border-radius:18px;
-  padding:26px;
-  scroll-snap-align:start;
-  flex-shrink:0;
-  transition:.35s;
-}
-
-.review:hover{
-  transform:translateY(-8px);
-  box-shadow:0 0 25px rgba(212,175,55,.25);
+min-width:280px;
+max-width:320px;
+background:rgba(0,0,0,.55);
+border:1px solid rgba(212,175,55,.45);
+border-radius:18px;
+padding:26px;
+scroll-snap-align:start;
+flex-shrink:0;
 }
 
 .review-stars{
-  color:#d4af37;
-  font-size:22px;
-  margin-bottom:10px;
+color:#d4af37;
+font-size:22px;
+margin-bottom:10px;
 }
 
 .review-name{
-  margin-top:12px;
-  font-weight:bold;
-  color:#d4af37;
+margin-top:12px;
+font-weight:bold;
+color:#d4af37;
 }
 
-/* ===== FAQ PRO ===== */
 .faq{
-  max-width:900px;
-  margin:90px auto;
-  padding:0 20px;
+max-width:900px;
+margin:90px auto;
+padding:0 20px;
 }
 
 .faq details{
-  background:rgba(0,0,0,.55);
-  border:1px solid rgba(212,175,55,.35);
-  border-radius:14px;
-  margin-bottom:14px;
-  padding:18px;
-  transition:.3s;
-}
-
-.faq details[open]{
-  box-shadow:0 0 20px rgba(212,175,55,.25);
+background:rgba(0,0,0,.55);
+border:1px solid rgba(212,175,55,.35);
+border-radius:14px;
+margin-bottom:14px;
+padding:18px;
 }
 
 .faq summary{
-  color:#d4af37;
-  font-weight:bold;
-  font-size:18px;
-  cursor:pointer;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  list-style:none;
+color:#d4af37;
+font-weight:bold;
+font-size:18px;
+cursor:pointer;
 }
 
-.faq summary::after{
-  content:"+";
-  font-size:22px;
-  transition:.25s;
-}
-
-.faq details[open] summary::after{
-  content:"−";
-}
-
-.faq details p{
-  margin-top:12px;
-  line-height:1.6;
-}
-
-/* CONTACT */
 .contact{
-  text-align:center;
-  padding:80px 20px;
+text-align:center;
+padding:80px 20px;
 }
 
-/* BUTTON */
 .social{
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 18px;
-  background:#1877f2;
-  color:white;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#1877f2;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
 }
 
 .call-btn{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#d4af37;
-  color:#0e2b1f;
-  padding:16px 22px;
-  border-radius:50px;
-  font-weight:bold;
-  text-decoration:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#d4af37;
+color:#0e2b1f;
+padding:16px 22px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
 }
 </style>
 </head>
@@ -310,188 +274,116 @@ header h1{
 <body>
 
 <nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">MOC NATURY</a>
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">MOC NATURY</a>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
 
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">Start</a>
-      <a href="onas.html">O nas</a>
-      <a href="#uslugi">Usługi</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="cennik.html">Cennik</a>
-      <a href="#kontakt">Kontakt</a>
-      <a href="https://www.facebook.com/profile.php?id=61586488868519" target="_blank">Facebook</a>
+<div class="nav-links" id="navLinks">
+<a href="index.html">Start</a>
+<a href="onas.html">O nas</a>
+<a href="#uslugi">Usługi</a>
+<a href="galeria.html">Galeria</a>
+<a href="cennik.html">Cennik</a>
+<a href="#kontakt">Kontakt</a>
+<a href="https://www.facebook.com/profile.php?id=61586488868519" target="_blank">Facebook</a>
 
-      <div class="lang-menu">
-        🌐 Język:
-        <a href="#" onclick="translateTo('pl')">PL</a>
-        <a href="#" onclick="translateTo('en')">EN</a>
-        <a href="#" onclick="translateTo('de')">DE</a>
-        <a href="#" onclick="translateTo('uk')">UA</a>
-      </div>
-    </div>
-  </div>
+<div class="lang-menu">
+🌐 Język:
+<a href="#" onclick="translateTo('pl')">PL</a>
+<a href="#" onclick="translateTo('en')">EN</a>
+<a href="#" onclick="translateTo('de')">DE</a>
+<a href="#" onclick="translateTo('uk')">UA</a>
+</div>
+</div>
+</div>
 </nav>
 
 <a href="tel:662748489" class="call-btn">📞 Zadzwoń</a>
 
 <header>
-  <img src="logo.png" class="logo">
-  <p>Usługi medycyny alternatywnej</p>
+<img src="logo.png" alt="Gabinet MOC NATURY Grudziądz" class="logo">
+<h1>Gabinet MOC NATURY</h1>
+<p>Biorezonans • Bańki chińskie • Konchowanie uszu • Terapia BRT – Grudziądz</p>
 </header>
 
 <section style="max-width:900px;margin:40px auto;text-align:center;padding:0 20px">
-  <p>
-    W Gabinecie MOC NATURY wspieramy Twoje zdrowie i dobre samopoczucie w naturalny sposób. Stawiamy na zioła, tradycyjne metody i holistyczne podejście, aby przywracać równowagę ciała i ducha w codziennym życiu. Zapraszamy dorosłych i dzieci!
-  </p>
+<h2>Naturalne metody wspierania zdrowia w Grudziądzu</h2>
+<p>
+W Gabinecie MOC NATURY w Grudziądzu wspieramy Twoje zdrowie i dobre samopoczucie w naturalny sposób.
+Stawiamy na zioła, tradycyjne metody i holistyczne podejście, takie jak biorezonans,
+bańki chińskie czy konchowanie uszu.
+</p>
 </section>
 
 <section id="uslugi" class="services">
-  <a href="biorezonans.html" class="card">
-    <img src="bio.jpg" class="service-img">
-    <h3>BIOREZONANS</h3>
-    <p>Kliknij aby zobaczyć opis</p>
-  </a>
+<a href="biorezonans.html" class="card">
+<img src="bio.jpg" alt="Biorezonans Grudziądz gabinet MOC NATURY" class="service-img">
+<h3>Biorezonans – Grudziądz</h3>
+<p>Kliknij aby zobaczyć opis</p>
+</a>
 
-  <a href="banki.html" class="card">
-    <img src="banki.jpg" class="service-img">
-    <h3>BAŃKI CHIŃSKIE</h3>
-    <p>Kliknij aby zobaczyć opis</p>
-  </a>
+<a href="banki.html" class="card">
+<img src="banki.jpg" alt="Bańki chińskie Grudziądz gabinet MOC NATURY" class="service-img">
+<h3>Bańki chińskie – Grudziądz</h3>
+<p>Kliknij aby zobaczyć opis</p>
+</a>
 
-  <a href="konchy.html" class="card">
-    <img src="konchy.jpg" class="service-img">
-    <h3>KONCHOWANIE USZU</h3>
-    <p>Kliknij aby zobaczyć opis</p>
-  </a>
+<a href="konchy.html" class="card">
+<img src="konchy.jpg" alt="Konchowanie uszu Grudziądz gabinet MOC NATURY" class="service-img">
+<h3>Konchowanie uszu – Grudziądz</h3>
+<p>Kliknij aby zobaczyć opis</p>
+</a>
 
-  <a href="brt.html" class="card">
-    <img src="brt.jpg" class="service-img">
-    <h3>BRT</h3>
-    <p>Kliknij aby zobaczyć opis</p>
-  </a>
-</section>
-
-<section class="reviews">
-  <h2 style="color:#d4af37">Opinie klientów</h2>
-
-  <div class="review-slider">
-    <div class="review">
-      <div class="review-stars">★★★★★</div>
-      <p>Świetna atmosfera i pełen profesjonalizm. Bardzo polecam!</p>
-      <div class="review-name">— Anna K.</div>
-    </div>
-
-    <div class="review">
-      <div class="review-stars">★★★★★</div>
-      <p>Już po pierwszej wizycie poczułem ogromną poprawę.</p>
-      <div class="review-name">— Marek P.</div>
-    </div>
-
-    <div class="review">
-      <div class="review-stars">★★★★★</div>
-      <p>Pani Kasia jest specjalistką w swojej dziedzinie, polecam!</p>
-      <div class="review-name">— Marzena J.</div>
-    </div>
-
-    <div class="review">
-      <div class="review-stars">★★★★★</div>
-      <p>Indywidualne podejście i duża wiedza. Na pewno wrócę.</p>
-      <div class="review-name">— Katarzyna W.</div>
-    </div>
-
-    <div class="review">
-      <div class="review-stars">★★★★★</div>
-      <p>Bardzo miła obsługa i widoczne efekty terapii.</p>
-      <div class="review-name">— Monika S.</div>
-    </div>
-  </div>
-</section>
-
-<section class="faq">
-  <h2 style="color:#d4af37;text-align:center">Najczęstsze pytania</h2>
-
-  <details>
-    <summary>Czy trzeba się przygotować do wizyty?</summary>
-    <p>Nie jest wymagane specjalne przygotowanie.</p>
-  </details>
-
-  <details>
-    <summary>Ile trwa wizyta?</summary>
-    <p>Zazwyczaj od 15 do 60 minut.</p>
-  </details>
-
-  <details>
-    <summary>Czy zabiegi są dla dzieci?</summary>
-    <p>Tak — wybrane zabiegi są dla dzieci.</p>
-  </details>
-
-  <details>
-    <summary>Czy każdy może skorzystać z zabiegów?</summary>
-    <p>Przed każdym zabiegiem przeprowadzany jest wywiad.</p>
-  </details>
+<a href="brt.html" class="card">
+<img src="brt.jpg" alt="Terapia BRT Grudziądz gabinet MOC NATURY" class="service-img">
+<h3>Terapia BRT – Grudziądz</h3>
+<p>Kliknij aby zobaczyć opis</p>
+</a>
 </section>
 
 <section id="kontakt" class="contact">
-  <h2 style="color:#d4af37">Kontakt</h2>
-  <p>📧 cywinska.katarzyna@wp.pl</p>
-  <p>📞 662 748 489</p>
-  <p>📍 ul. Kasprzaka 42, 86-300 Grudziądz</p>
+<h2 style="color:#d4af37">Kontakt</h2>
+<p>📧 cywinska.katarzyna@wp.pl</p>
+<p>📞 662 748 489</p>
+<p>📍 ul. Kasprzaka 42, 86-300 Grudziądz</p>
 
-  <a href="https://www.facebook.com/profile.php?id=61586488868519" target="_blank" class="social">
-    👍 Znajdź nas na Facebooku
-  </a>
-
-  <div style="max-width:900px;margin:40px auto;border-radius:16px;overflow:hidden;border:2px solid rgba(212,175,55,.45)">
-    <iframe
-      src="https://www.google.com/maps?q=Kasprzaka+42+Grudziadz&output=embed"
-      width="100%"
-      height="320"
-      style="border:0;"
-      loading="lazy">
-    </iframe>
-  </div>
+<div style="max-width:900px;margin:40px auto;border-radius:16px;overflow:hidden;border:2px solid rgba(212,175,55,.45)">
+<iframe src="https://www.google.com/maps?q=Kasprzaka+42+Grudziadz&output=embed" width="100%" height="320" style="border:0;"></iframe>
+</div>
 </section>
 
 <footer style="text-align:center;padding:30px;color:#d4af37;border-top:1px solid rgba(212,175,55,.35)">
-  © <span id="year"></span> Gabinet MOC NATURY         
+© <span id="year"></span> Gabinet MOC NATURY
 </footer>
 
 <script>
 function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
+document.getElementById("navLinks").classList.toggle("active");
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
-
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'pl',
-    includedLanguages: 'pl,en,de,uk',
-    autoDisplay: false
-  }, 'google_translate_element');
-}
-
-function translateTo(lang){
-  if(lang === 'pl'){
-    document.cookie = "googtrans=/pl/pl;path=/";
-    location.reload();
-    return;
-  }
-  const select = document.querySelector(".goog-te-combo");
-  if(select){
-    select.value = lang;
-    select.dispatchEvent(new Event("change"));
-  }
-}
+document.getElementById("year").textContent=new Date().getFullYear();
 </script>
 
-<div id="google_translate_element" style="display:none;"></div>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"MedicalBusiness",
+"name":"Gabinet MOC NATURY",
+"image":"https://gabinetmocnatury.github.io/logo.png",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"ul. Kasprzaka 42",
+"addressLocality":"Grudziądz",
+"postalCode":"86-300",
+"addressCountry":"PL"
+},
+"telephone":"+48662748489",
+"url":"https://gabinetmocnatury.github.io"
+}
+</script>
 
 </body>
 </html>
