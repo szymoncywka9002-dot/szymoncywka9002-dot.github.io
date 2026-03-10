@@ -1,0 +1,45 @@
+{
+"@context":"https://schema.org",
+"@type":"MedicalBusiness",
+"name":"Gabinet MOC NATURY",
+"url":"https://gabinetmocnatury.github.io",
+"telephone":"+48662748489",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"ul. Kasprzaka 42",
+"addressLocality":"Grudziądz",
+"postalCode":"86-300",
+"addressCountry":"PL"
+},
+"areaServed":"Grudziądz",
+"makesOffer":[
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"MedicalTherapy",
+"name":"Biorezonans"
+}
+},
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"MedicalTherapy",
+"name":"Bańki chińskie"
+}
+},
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"MedicalTherapy",
+"name":"Konchowanie uszu"
+}
+},
+{
+"@type":"Offer",
+"itemOffered":{
+"@type":"MedicalTherapy",
+"name":"Terapia BRT"
+}
+}
+]
+}
